@@ -11,6 +11,9 @@ $ sudo apt-get install libglu1-mesa:i386
 Configuration :
 
 $ cd dxfrwInterface
+
 $ qmake example.pro
+
 $ make
+
 $ ./example <dxf file>
