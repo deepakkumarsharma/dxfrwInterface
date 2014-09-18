@@ -1,18 +1,12 @@
 #include "implementation.h"
 
-void implementation::addLine(const DRW_Line &data) {
+void implementation::addArc(const DRW_Arc &data) {
     std::cout << "#####################\n";
-    std::cout << "#       Line        #\n";
+    std::cout << "#         Arc       #\n";
     std::cout << "#####################\n\n";
-    std::cout << "Start \n X\t Y\n";
-    std::cout << data.basePoint.x;
-    std::cout << "\t";
-    std::cout << data.basePoint.y;
-    std::cout << "\n";
-    std::cout << "End \n X\t Y\n";
-    std::cout << data.secPoint.x;
-    std::cout << "\t";
-    std::cout << data.secPoint.y;
+    std::cout << "Start Angle\n"<<data.staangle;
+    std::cout << "\n\n";
+    std::cout << "End Angle\n"<<data.endangle;
     std::cout << "\n";
 }
 
@@ -50,17 +44,6 @@ void implementation::addEllipse(const DRW_Ellipse &data) {
     std::cout << data.secPoint.y;
     std::cout << "\n";
 }
-
-void implementation::addArc(const DRW_Arc &data) {
-    std::cout << "#####################\n";
-    std::cout << "#         Arc       #\n";
-    std::cout << "#####################\n\n";
-    std::cout << "Start Angle\n"<<data.staangle;
-    std::cout << "\n\n";
-    std::cout << "End Angle\n"<<data.endangle;
-    std::cout << "\n";
-}
-
 
 void implementation::addPoint(const DRW_Point &data) {
     std::cout << "#####################\n";
@@ -102,3 +85,36 @@ void implementation::addLWPolyline(const DRW_LWPolyline &data) {
     std::cout << data.extPoint.y;
     std::cout << "\n";
 }
+
+void implementation::addLayer(const DRW_Layer &data) {
+    std::cout << "#####################\n";
+    std::cout << "#       Layer       #\n";
+    std::cout << "#####################\n\n";
+    std::cout << "LineType\n";
+    std::cout << data.lineType<<"\n\n";
+    std::cout << "Color\n";
+    std::cout << data.color<<"\n\n";
+    std::cout << "Plot F\n";
+    std::cout << data.plotF<<"\n\n";
+    std::cout << "Line Weight\n";
+    std::cout << data.lWeight<<"\n\n";
+}
+
+
+void implementation::addLine(const DRW_Line &data) {
+    std::cout << "#####################\n";
+    std::cout << "#       Line        #\n";
+    std::cout << "#####################\n\n";
+    std::cout << "Start \n X\t Y\n";
+    std::cout << data.basePoint.x;
+    std::cout << "\t";
+    std::cout << data.basePoint.y;
+    std::cout << "\n";
+    std::cout << "End \n X\t Y\n";
+    std::cout << data.secPoint.x;
+    std::cout << "\t";
+    std::cout << data.secPoint.y;
+    std::cout << "\n";
+}
+
+
