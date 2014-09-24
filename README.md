@@ -24,4 +24,4 @@ $ qmake example.pro
 
 $ make
 
-$ ./example <dxf file>
+$ ./example dxf_file.dxf
