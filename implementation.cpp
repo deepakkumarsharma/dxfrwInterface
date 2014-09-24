@@ -4,10 +4,11 @@ void implementation::addArc(const DRW_Arc &data) {
     std::cout << "#####################\n";
     std::cout << "#         Arc       #\n";
     std::cout << "#####################\n\n";
-    std::cout << "Start Angle\n"<<data.staangle;
+    std::cout << "Start Angle\n";
+    std::cout << data.staangle;
     std::cout << "\n\n";
     std::cout << "End Angle\n"<<data.endangle;
-    std::cout << "\n";
+    std::cout << "\n\n";
 }
 
 void implementation::addCircle(const DRW_Circle &data) {
@@ -15,12 +16,12 @@ void implementation::addCircle(const DRW_Circle &data) {
     std::cout << "#       Circle      #\n";
     std::cout << "#####################\n\n";
     std::cout << "Radius:\n"<<data.radious;
-    std::cout << "\nCenter\n";
+    std::cout << "\n\nCenter\n";
     std::cout << "X\t Y\n";
     std::cout << data.basePoint.x;
     std::cout << "\t";
     std::cout << data.basePoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
 }
 
 void implementation::addEllipse(const DRW_Ellipse &data) {
@@ -37,12 +38,12 @@ void implementation::addEllipse(const DRW_Ellipse &data) {
     std::cout << data.basePoint.x;
     std::cout << "\t";
     std::cout << data.basePoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
     std::cout << "End \n X\t Y\n";
     std::cout << data.secPoint.x;
     std::cout << "\t";
     std::cout << data.secPoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
 }
 
 void implementation::addPoint(const DRW_Point &data) {
@@ -53,12 +54,12 @@ void implementation::addPoint(const DRW_Point &data) {
     std::cout << data.basePoint.x;
     std::cout << "\t";
     std::cout << data.basePoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
     std::cout << "External Point \n X\t Y\n";
     std::cout << data.extPoint.x;
     std::cout << "\t";
     std::cout << data.extPoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
 }
 
 void implementation::addLWPolyline(const DRW_LWPolyline &data) {
@@ -83,7 +84,7 @@ void implementation::addLWPolyline(const DRW_LWPolyline &data) {
     std::cout << data.extPoint.x;
     std::cout << "\t";
     std::cout << data.extPoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
 }
 
 void implementation::addLayer(const DRW_Layer &data) {
@@ -109,7 +110,7 @@ void implementation::addLine(const DRW_Line &data) {
     std::cout << data.basePoint.x;
     std::cout << "\t";
     std::cout << data.basePoint.y;
-    std::cout << "\n";
+    std::cout << "\n\n";
     std::cout << "End \n X\t Y\n";
     std::cout << data.secPoint.x;
     std::cout << "\t";
